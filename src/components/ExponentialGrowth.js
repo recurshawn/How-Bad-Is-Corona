@@ -6,7 +6,7 @@ class ExponentialGrowth extends React.Component
     {
         return(
             <div className="Exponential">
-                
+                <div  className="wrapper block fixed"><input placeholder="Enter an R0 value"/></div>
             </div>
         )
     }
