@@ -24,7 +24,7 @@ class ExponentialGrowth extends React.Component
         let infected = 1;
         for(let i=1; i< this.state.generations;i++)
         {
-            infected = Math.round(Math.pow(this.state.r0, i)); //+ infected;
+            infected = Math.round(Math.pow(this.state.r0, i)) + infected;
             console.log(infected);
         }
         return infected;
