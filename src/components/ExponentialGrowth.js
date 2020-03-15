@@ -46,8 +46,8 @@ class ExponentialGrowth extends React.Component
                 </select><label> people...</label>
                 
                 <br/>
-
-                <h3>{this.getInfected()} people will be infected from that one singular affected person. Shocked?</h3>
+                <h2>{this.getInfected()}</h2>
+                <h3> people will be infected from that one singular affected person. Shocked?</h3>
                 <h3>The good news is that we can control this number. How?</h3>
                 <p>By reducing the number of interactions people make.</p>
             </div>
