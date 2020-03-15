@@ -38,7 +38,7 @@ class ExponentialGrowth extends React.Component {
             for(let i=3; i< (strInf.length);i++)
                 strInf = this.replaceAt(strInf, i, '0');
         }
-        return (strInf.charAt(0).toUpperCase() + strInf.slice(1));
+        return ((strInf.charAt(0)).toUpperCase() + strInf.slice(1));
     }
 
     getInWords = (num) => {
@@ -73,8 +73,8 @@ class ExponentialGrowth extends React.Component {
                 </select><label> people...</label>
 
                 <br />
-                <h2>{this.getInWords(this.getInfected())}</h2>
-                <h3> people will be infected from that one first case 😱</h3>
+                <h2 className="scaryNum big">{this.getInWords(this.getInfected())}</h2>
+                <h3> people will be infected <span className="scaryNum">from</span> that <span className="scaryNum">one first case</span> 😱</h3>
                 <h2>The good news is that we can control this number. How?</h2>
                 <p>By reducing the number of interactions people make. <br /> INSERT TIPS ETC.</p>
             </div>

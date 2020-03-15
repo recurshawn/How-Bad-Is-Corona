@@ -38,6 +38,14 @@ input, select
 
 }
 
+.scaryNum
+{
+  color: #ff4343;
+}
+.big
+{
+  font-size: 3em;
+}
 input{
   width: 50px;
 }
