@@ -23,14 +23,14 @@ class App extends React.Component {
             </div>
           </div>
         <div className="body">
-          <p>Thousands more have died from Flu and traffic accidents so why is the Corona Virus (nCoVid-19) dangerous? Because we've only seen the tip of the iceberg.</p>
+          <p>Thousands more have died from Flu and traffic accidents so why is the Corona Virus (COVID-19) dangerous? Because we've only seen the tip of the iceberg.</p>
           <p>Insert stuff about exponential growth here. <br/> <br/> TRY TO KEEP IT SIMPLE AND MINIMAL</p>
           <ExponentialGrowth />
           </div>
           
           <div className="body">
           <div className="block fixed">
-            <p>I recommend watching this video by 3blue1brown (an amazing channel), especially if you want to gain a better intuition for the math behind epidemics.</p>
+            <p>I recommend watching this video by 3blue1brown, especially if you want to gain a better intuition for the math behind epidemics.</p>
             <div className="iframe-container">
               <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Kas0tIxDvrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
             </div>
