@@ -21,7 +21,12 @@ a {
 {
   margin: 0 auto;
 }
-
+.heading
+{
+  padding: 20px;
+  color: white;
+  background-color: #ff4343;
+}
 input, select
 {
   border: 3px solid black;
@@ -30,6 +35,9 @@ input, select
 
 }
 
+input{
+  width: 50px;
+}
 .signature{
   text-align: center;
   background-color: #ff4343;
@@ -48,4 +56,43 @@ input, select
 .signature a 
 {
   font-weight: 600;
+}
+
+/* YouTube embed */
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Medical Cross Signs */
+
+.circle-plus-1 { position: absolute; height:16em; width:16em; font-size:3em; z-index: -1; /*Will change icon size*/;}
+ .circle {position: relative; width: 4.5em; height: 4.5em; border-radius: 100%; }
+ .circle .horizontal {position: absolute; background-color: #ff6c6c; width: 2.4em; height: .7em; top: 1.9em; left: 1.05em;}
+ .circle .vertical {position: absolute; background-color: #ff6c6c; width: .7em; height: 2.4em; top: 1.05em; left: 1.9em;}
+
+.circle-plus-2 { margin-right: 0; position: absolute; height:13em; width:13em; font-size:2em; z-index: -1; /*Will change icon size*/;}
+
+.rotate {
+  animation: rotation 60s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
