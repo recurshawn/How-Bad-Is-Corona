@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {Suspense, lazy} from 'react';
 
 import './App.css';
 import ExponentialGrowth from './components/ExponentialGrowth';
-import References from './components/References';
 import Footer from './components/Footer';
+const References = lazy(() => import('./components/References'));
+
+const YouTubeEmbed = lazy(() => import('./components/YouTubeEmbed'));
 
 class App extends React.Component {
   render() {
@@ -15,17 +17,11 @@ class App extends React.Component {
           <p>Thousands more have died from Flu and traffic accidents so why is the Corona Virus (COVID-19) dangerous? Because we've only seen the tip of the iceberg.</p>
           <p>Insert stuff about exponential growth here. <br/> <br/> TRY TO KEEP IT SIMPLE AND MINIMAL</p>
           <ExponentialGrowth />
-          </div>
+          <Suspense fallback={<div>Loading</div>}>
+          <YouTubeEmbed/>
           
-          <div className="body">
-          <div className="block fixed">
-            <p>I recommend watching this video by 3blue1brown, especially if you want to gain a better intuition for the math behind epidemics.</p>
-            <div className="iframe-container">
-              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Kas0tIxDvrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
-            </div>
-          </div>
           <References />
-
+          </Suspense>
         </div>
         <Footer />
       </div>

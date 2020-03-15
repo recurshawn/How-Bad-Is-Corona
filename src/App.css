@@ -57,6 +57,12 @@ input{
   padding-bottom: 10px;
 }
 
+.youtube
+{
+  width: 560px; 
+  height: 315px;
+}
+
 .signature a:visited
 {
   color: rgb(255, 255, 255);
