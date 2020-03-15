@@ -33,6 +33,7 @@ class ExponentialGrowth extends React.Component
     {
         return(
             <div className="Exponential fixed block">
+                <p>Suppose we have a single person infected with the Corona Virus (COVID-19).</p>
                 <label>Assuming every infected person infects </label>
                 <input type="number" placeholder="2.5" onChange = {this.getR0}/> <label> other people.</label>
                 <br />
@@ -47,9 +48,9 @@ class ExponentialGrowth extends React.Component
                 
                 <br/>
                 <h2>{this.getInfected()}</h2>
-                <h3> people will be infected from that one singular affected person. Shocked?</h3>
-                <h3>The good news is that we can control this number. How?</h3>
-                <p>By reducing the number of interactions people make.</p>
+                <h3> people will be infected from that one first case 😱</h3>
+                <h2>The good news is that we can control this number. How?</h2>
+                <p>By reducing the number of interactions people make. <br/> INSERT TIPS ETC.</p>
             </div>
         )
     }

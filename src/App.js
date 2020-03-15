@@ -9,7 +9,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1 className="heading centerText">How dangerous is nCovid-19?</h1>
+        <h1 className="heading centerText">😷 How dangerous is COVID-19?</h1>
         <div className="circle-plus-1">
             <div className="circle rotate">
               <div className="horizontal"></div>
@@ -24,7 +24,7 @@ class App extends React.Component {
           </div>
         <div className="body">
           <p>Thousands more have died from Flu and traffic accidents so why is the Corona Virus (nCoVid-19) dangerous? Because we've only seen the tip of the iceberg.</p>
-          <p>Insert stuff about exponential growth here</p>
+          <p>Insert stuff about exponential growth here. <br/> <br/> TRY TO KEEP IT SIMPLE AND MINIMAL</p>
           <ExponentialGrowth />
           </div>
           

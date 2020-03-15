@@ -80,12 +80,12 @@ input{
 
 /* Medical Cross Signs */
 
-.circle-plus-1 { position: absolute; height:13em; width:13em; font-size:2em; z-index: -1; /*Will change icon size*/;}
+.circle-plus-1 { position: absolute;  height:16em; width:16em; font-size:3em;  z-index: -1; /*Will change icon size*/;}
  .circle {position: relative; width: 4.5em; height: 4.5em; border-radius: 100%; }
  .circle .horizontal {position: absolute; background-color: #ff6c6c; width: 2.4em; height: .7em; top: 1.9em; left: 1.05em;}
  .circle .vertical {position: absolute; background-color: #ff6c6c; width: .7em; height: 2.4em; top: 1.05em; left: 1.9em;}
 
-.circle-plus-2 {position: absolute; right: 0; height:16em; width:16em; font-size:3em; z-index: -1; /*Will change icon size*/;}
+.circle-plus-2 {position: absolute; right: 0; height:13em; width:13em; font-size:2em; z-index: -1; /*Will change icon size*/;}
 
 .rotate {
   animation: rotation 60s infinite linear;
