@@ -5,11 +5,13 @@
   margin: 0 auto;
 }
 
-/* a:visited
-{
-  color: rgb(58, 172, 248);
-} */
+a:visited{
+  color: #ff6767;
+}
 
+a {
+  color: #ff1818;
+}
 .centerText
 {
   text-align: center;
@@ -31,7 +33,19 @@ input, select
 .signature{
   text-align: center;
   background-color: #ff4343;
-  color: white;
+  color: rgb(236, 236, 236);
   padding-top: 5px;
   padding-bottom: 10px;
+}
+
+.signature a:visited
+{
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+
+.signature a 
+{
+  font-weight: 600;
 }
