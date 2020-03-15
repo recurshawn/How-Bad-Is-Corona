@@ -4,7 +4,7 @@ import './App.css';
 
 import Footer from './components/Footer';
 
-const ExponentialGrowth = lazy(()=> './components/ExponentialGrowth');
+const ExponentialGrowth = lazy(()=> import('./components/ExponentialGrowth'));
 const References = lazy(() => import('./components/References'));
 
 const YouTubeEmbed = lazy(() => import('./components/YouTubeEmbed'));
@@ -18,7 +18,7 @@ class App extends React.Component {
         <div className="body">
           <p>Thousands more have died from Flu and traffic accidents so why is the Corona Virus (COVID-19) dangerous? Because we've only seen the tip of the iceberg.</p>
           <p>Insert stuff about exponential growth here. <br/> <br/> TRY TO KEEP IT SIMPLE AND MINIMAL</p>
-          <Suspense fallback={<div>Loading</div>}>
+          <Suspense fallback={<div>Loading...</div>}>
             <ExponentialGrowth />
           
           <YouTubeEmbed/>
