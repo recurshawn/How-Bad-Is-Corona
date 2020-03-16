@@ -38,6 +38,11 @@ input, select
 
 }
 
+.input-range__slider
+{
+  background: #ff4343;
+  border: 1px solid #ff4343;
+}
 .scaryNum
 {
   color: #ff4343;
@@ -91,7 +96,26 @@ input{
   height: 100%;
 }
 
+.variable
+{
+  text-decoration: underline;
+}
+.wrapper
+{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 
+.left-grid
+{
+  padding: 5%;
+  border-right: 2px solid black;
+}
+
+.right-grid
+{
+  padding: 5%;
+}
 /* Medical Cross Signs */
 
 .circle-plus-1 { position: absolute;  height:16em; width:16em; font-size:3em;  z-index: -1; /*Will change icon size*/;}

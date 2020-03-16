@@ -1,5 +1,6 @@
 import React from 'react';
-
+import InputRange from 'react-input-range';
+import 'react-input-range/lib/css/index.css';
 
 class ExponentialGrowth extends React.Component {
     state = {
@@ -60,18 +61,42 @@ class ExponentialGrowth extends React.Component {
         return (
             <div className="Exponential fixed block">
                 <p>Suppose we have a single person infected with the Corona Virus (COVID-19).</p>
-                <label>Assuming every infected person infects </label>
-                <input type="number" placeholder="2.5" onChange={this.getR0} /> <label> other people.</label>
-                <br />
-                <label>After the virus hops a chain of </label>
-                <select onChange={this.getGenerations}>
-                    <option value="20">20</option>
-                    <option value="10">10</option>
-                    <option value="30">30</option>
-                    <option value="50">50</option>
-                    <option value="90">90</option>
-                </select><label> people...</label>
 
+                <div className="wrapper">
+                    <div className="left-grid">
+        
+                        <p>Assuming every infected person infects <span className="variable">{this.state.r0.toPrecision(2)}</span> other new people (on average).</p>
+                        <br/>
+                        <InputRange
+                            name = "R0 (how many new people each case infects)"
+                            formatLabel={value => `${value.toPrecision(2)}`}
+                            step={0.1}
+                            maxValue={6}
+                            minValue={0}
+                            value={this.state.r0}
+                            onChange={value => this.setState({ r0: value })}
+                        />
+                        <p>Use the slider to vary this value.</p>
+                    </div>
+        
+                    <div className="right-grid">
+                        <p>Choose how far into the future you want to estimate for (you can ignore this).</p>
+                        <br/>
+                    <InputRange
+                        name = "Generations (how many hops the virus needs to make)"
+                        formatLabel={value => `${value}`}
+                        maxValue={50}
+                        minValue={0}
+                        value={this.state.generations}
+                        onChange={value => this.setState({ generations: value })}
+                    />
+                    <p>Use the slider to vary this value.</p>
+                    </div>
+
+                </div>
+
+
+        
                 <br />
                 <h2 className="scaryNum big">{this.getInWords(this.getInfected())}</h2>
                 <h3> people will be infected <span className="scaryNum">from</span> that <span className="scaryNum">one first case</span> 😱</h3>
