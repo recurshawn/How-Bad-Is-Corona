@@ -19,10 +19,10 @@ class App extends React.Component {
           <p>Thousands more have died from Flu and traffic accidents so why is the Corona Virus (COVID-19) dangerous? Because we've only seen the tip of the iceberg.</p>
           <p>Insert stuff about exponential growth here. <br/> <br/> TRY TO KEEP IT SIMPLE AND MINIMAL</p>
           <Suspense fallback={<div>Loading...</div>}>
-            <ExponentialGrowth />
-          
+          <ExponentialGrowth />
+          <br/>
           <YouTubeEmbed/>
-          
+          <br/>
           <References />
           </Suspense>
         </div>

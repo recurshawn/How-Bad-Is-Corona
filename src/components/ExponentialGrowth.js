@@ -8,8 +8,12 @@ class ExponentialGrowth extends React.Component {
         generations: 20,
     }
 
-    replaceAt= (str, index, replacement) => {
-        return str.substr(0, index) + replacement+ str.substr(index + replacement.length);
+    // insertAt= (str, index, replacement) => {
+    //     return str.substr(0, index-1) + replacement+ str.substr(index+1 + replacement.length);
+    // }
+
+    insertAt = (x) => {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 
     capitalize = (str) => {
@@ -34,13 +38,19 @@ class ExponentialGrowth extends React.Component {
             //console.log(infected);
         }
         let strInf = infected.toString();
-        if(strInf.length > 4)
+        if(strInf.length > 21)
         {
-            for(let i=3; i< (strInf.length);i++)
-                strInf = this.replaceAt(strInf, i, '0');
+            strInf="Too many"
+                
+            
         }
-        return ((strInf.charAt(0)).toUpperCase() + strInf.slice(1));
+        else
+        {
+            strInf = this.insertAt(strInf);
+        }
+        return (strInf);
     }
+
 
     getInWords = (num) => {
         var a = ['', 'one ', 'two ', 'three ', 'four ', 'five ', 'six ', 'seven ', 'eight ', 'nine ', 'ten ', 'eleven ', 'twelve ', 'thirteen ', 'fourteen ', 'fifteen ', 'sixteen ', 'seventeen ', 'eighteen ', 'nineteen '];
@@ -98,7 +108,7 @@ class ExponentialGrowth extends React.Component {
 
         
                 <br />
-                <h2 className="scaryNum big">{this.getInWords(this.getInfected())}</h2>
+                <h2 className="scaryNum big">{this.getInfected()}</h2>
                 <h3> people will be infected <span className="scaryNum">from</span> that <span className="scaryNum">one first case</span> 😱</h3>
                 <h2>The good news is that we can control this number. How?</h2>
                 <p>By reducing the number of interactions people make. <br /> INSERT TIPS ETC.</p>
