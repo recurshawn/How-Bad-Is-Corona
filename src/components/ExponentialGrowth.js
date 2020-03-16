@@ -99,7 +99,7 @@ class ExponentialGrowth extends React.Component {
                     />
                     <br/>
                     <p>Assuming the virus hops a chain of <span className="variable">{this.state.generations}</span> generations [ignore this if it tells you nothing]</p>
-                    <p>Use the slider to vary this value.</p>
+                    
                     </div>
 
                 </div>
