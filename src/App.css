@@ -45,7 +45,8 @@ input, select
 }
 .big
 {
-  font-size: 3em;
+  font-size: 4em;
+  font-weight: 500;
 }
 input{
   width: 50px;

@@ -102,11 +102,7 @@ class ExponentialGrowth extends React.Component {
                     </div>
 
                 </div>
-
-
-        
-                <br />
-                <h2 className="scaryNum big">{this.getInfected()}</h2>
+                <p className="scaryNum big">{this.getInfected()}</p>
                 <h3> people will be infected <span className="scaryNum">from</span> that <span className="scaryNum">one first case</span> 😱</h3>
                 <h2>The good news is that we can control this number. How?</h2>
                 <p>By reducing the number of interactions people make. <br /> INSERT TIPS ETC.</p>
