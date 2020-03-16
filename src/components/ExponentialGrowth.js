@@ -38,11 +38,9 @@ class ExponentialGrowth extends React.Component {
             //console.log(infected);
         }
         let strInf = infected.toString();
-        if(strInf.length > 21)
+        if(strInf.includes('e'))
         {
-            strInf="Too many"
-                
-            
+            strInf="Too many";
         }
         else
         {
