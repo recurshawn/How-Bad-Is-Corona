@@ -107,13 +107,15 @@ input{
 
 .left-grid
 {
-  padding: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
   border-right: 2px solid black;
 }
 
 .right-grid
 {
-  padding: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 /* Medical Cross Signs */
 

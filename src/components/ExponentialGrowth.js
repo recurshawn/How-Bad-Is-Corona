@@ -72,8 +72,8 @@ class ExponentialGrowth extends React.Component {
 
                 <div className="wrapper">
                     <div className="left-grid">
-        
-                        
+                        <h3>R0 value</h3>
+                        <br/>
                         <InputRange
                             name = "R0 (how many new people each case infects)"
                             formatLabel={value => `${value.toPrecision(2)}`}
@@ -89,6 +89,8 @@ class ExponentialGrowth extends React.Component {
                     </div>
         
                     <div className="right-grid">
+                        <h3>Generations</h3>
+                        <br/>
                     <InputRange
                         name = "Generations (how many hops the virus needs to make)"
                         formatLabel={value => `${value}`}
