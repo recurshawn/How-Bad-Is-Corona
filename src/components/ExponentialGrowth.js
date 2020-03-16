@@ -73,7 +73,7 @@ class ExponentialGrowth extends React.Component {
                 <div className="wrapper">
                     <div className="left-grid">
         
-                        <p>Assuming every infected person infects <span className="variable">{this.state.r0.toPrecision(2)}</span> other new people (on average).</p>
+                        <p>Assuming each infected person infects <span className="variable">{this.state.r0.toPrecision(2)}</span> other new people (on average).</p>
                         <br/>
                         <InputRange
                             name = "R0 (how many new people each case infects)"
@@ -88,7 +88,7 @@ class ExponentialGrowth extends React.Component {
                     </div>
         
                     <div className="right-grid">
-                        <p>Choose how far into the future you want to estimate for (you can ignore this).</p>
+                        <p>Assuming the virus hops a chain of <span className="variable">{this.state.generations}</span> generations [can be ignored]</p>
                         <br/>
                     <InputRange
                         name = "Generations (how many hops the virus needs to make)"
