@@ -6,6 +6,7 @@ class ExponentialGrowth extends React.Component {
     state = {
         r0: 2.5,
         generations: 20,
+        r0Text: 'between 2 to 3 other new persons',
     }
 
     // insertAt= (str, index, replacement) => {
@@ -20,17 +21,25 @@ class ExponentialGrowth extends React.Component {
         return str.charAt(0).toUpperCase() + str.slice(1);
       }
 
-    getR0 = (e) => {
-        if (e.target.value === '')
-            this.setState({ r0: 2.5 })
+    getR0 = (num) => {
+
+        this.setState({ r0: num.toPrecision(2), r0Text: this.getR0Text(num)});
+    }
+
+    getR0Text = (r0) =>
+    {
+        if(Number.isInteger(r0))
+        {
+            if(r0===1)
+                return '1 other new person';
+            else
+                return (r0 +' other new persons');
+        }
+            
+            
         else
-            this.setState({ r0: e.target.value });
+            return ('between '+Math.floor(r0)+" to "+Math.ceil(r0)+" other new persons");
     }
-
-    getGenerations = (e) => {
-        this.setState({ generations: e.target.value });
-    }
-
     getInfected = () => {
         let infected = 1;
         for (let i = 1; i < this.state.generations; i++) {
@@ -50,21 +59,7 @@ class ExponentialGrowth extends React.Component {
     }
 
 
-    // getInWords = (num) => {
-    //     var a = ['', 'one ', 'two ', 'three ', 'four ', 'five ', 'six ', 'seven ', 'eight ', 'nine ', 'ten ', 'eleven ', 'twelve ', 'thirteen ', 'fourteen ', 'fifteen ', 'sixteen ', 'seventeen ', 'eighteen ', 'nineteen '];
-    //     var b = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
-    //     if((num=num.toString()).length < 6) return num;
-    //     if ((num = num.toString()).length > 9) return 'Too many';
-    //     let n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
-    //     if (!n) return; var str = '';
-    //     str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + 'crore ' : '';
-    //     str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'lakh ' : '';
-    //     str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'thousand ' : '';
-    //     str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'hundred ' : '';
-    //     str += (n[5] != 0) ? ((str != '') ? 'and ' : '') + (a[Number(n[5])] || b[n[5][0]] + ' ' + a[n[5][1]]) + 'only ' : '';
-    //     return str;
-
-    // }
+    
     render() {
         return (
             <div className="Exponential fixed block">
@@ -77,16 +72,16 @@ class ExponentialGrowth extends React.Component {
                         <div className="range">
                         <InputRange
                             name = "R0 (how many new people each case infects)"
-                            formatLabel={value => `${value.toPrecision(2)}`}
+                            formatLabel={value => `${value}`}
                             step={0.1}
-                            maxValue={6}
+                            maxValue={4}
                             minValue={0}
                             value={this.state.r0}
-                            onChange={value => this.setState({ r0: value })}
+                            onChange={value => this.getR0(value)}
                         />
                         </div>
                         <br/>
-                        <p>Assuming each infected person infects <span className="variable">{this.state.r0.toPrecision(2)}</span> other new people on average (called R0).</p>
+                        <p>Assuming each infected person infects <span className="variable">{this.state.r0Text}</span> (let's call this number R0).</p>
                         <p>Use the slider to vary this value.</p>
                     
         
