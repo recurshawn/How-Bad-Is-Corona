@@ -5,6 +5,7 @@ const References = () =>
     return(
         <div className="fixed block">
             <h3>If you want to explore this further, I recommend:</h3>
+            <p><a href="https://youtu.be/Kas0tIxDvrg">3blue1brown - Exponential Growth and Epidemics</a></p>
             <p><a href="https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca">Tomas Pueyo - Coronavirus: Why You Must Act Now</a></p>
             <p><a href="https://www.fast.ai/2020/03/09/coronavirus">Fast.ai - COVID-19: A data science perspective</a></p>
             <p>[If you know any good resources on the topic, tell me and I'll add them here]</p>
