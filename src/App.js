@@ -21,7 +21,7 @@ class App extends React.Component {
           <Suspense fallback={<div>Loading...</div>}>
           <ExponentialGrowth />
           <br/>
-          <YouTubeEmbed/>
+          
           <br/>
           <References />
           </Suspense>
