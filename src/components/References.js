@@ -3,7 +3,7 @@ import React from 'react';
 const References = () =>
 {
     return(
-        <div className="fixed block">
+        <div className="fixed block alignLeft">
             <h3>If you want to explore this further, I recommend:</h3>
             <p><a href="https://youtu.be/Kas0tIxDvrg">3blue1brown - Exponential Growth and Epidemics</a></p>
             <p><a href="https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca">Tomas Pueyo - Coronavirus: Why You Must Act Now</a></p>

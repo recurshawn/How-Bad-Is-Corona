@@ -4,8 +4,15 @@
   width: 90%;
   margin: 0 auto;
 }
+
+.alignLeft
+{
+  text-align: left;
+}
+
 .block
 {
+  padding: 16px;
   font-weight: 400;
   -webkit-user-select: text !important;
   -moz-user-select: text !important;
