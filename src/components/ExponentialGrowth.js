@@ -81,8 +81,8 @@ class ExponentialGrowth extends React.Component {
                         />
                         </div>
                         <br/>
-                        <p>Assuming each infected person infects <span className="variable">{this.state.r0Text}</span> (let's call this number R0).</p>
-                        <p>Use the slider to vary this value.</p>
+                        <p>Assuming each infected person infects <span className="variable">{this.state.r0Text}</span> <br/>(let's call this number R0).</p>
+                        <p>Feel free to use the slider to play around with this value. Notice how quickly infected numbers rise and fall depending on R0's value.</p>
                     
         
                     
