@@ -17,7 +17,7 @@ class App extends React.Component {
         
         <div className="body">
           <p>Is the Corona Virus (COVID-19) overhyped by the media? Isn't it another flu?</p>
-          <p>NO & NO. So what is the big deal? Well for starters, we don't have a vaccine or cure for COVID-19 yet. Secondly, the number of cases of COVID-19 are growing exponentially. Unfortunately the average human brain isn't wired to visualize exponential math very well. Don't worry, I got you covered!</p> <p>👇Try the calculator below to get a feel of what exponential math is👇</p>
+          <p>NO & NO. <span className="variable">So what is the big deal?</span> Well for starters, we don't have a vaccine or cure for COVID-19 yet. Secondly, the number of cases of COVID-19 are growing exponentially. Unfortunately the average human brain isn't wired to visualize exponential math very well. Don't worry, I got you covered!</p> <p>👇Try the calculator below to get a feel of what exponential math is👇</p>
           <Suspense fallback={<div>Loading...</div>}>
           <ExponentialGrowth />
           <br/>

@@ -70,10 +70,11 @@ class ExponentialGrowth extends React.Component {
             <div className="Exponential fixed block">
                 <p>Suppose we have a single person infected with the Corona Virus (COVID-19).</p>
 
-                <div className="wrapper">
-                    <div className="left-grid">
+                
+                    
                         <h3>R0 value</h3>
                         <br/>
+                        <div className="range">
                         <InputRange
                             name = "R0 (how many new people each case infects)"
                             formatLabel={value => `${value.toPrecision(2)}`}
@@ -83,33 +84,20 @@ class ExponentialGrowth extends React.Component {
                             value={this.state.r0}
                             onChange={value => this.setState({ r0: value })}
                         />
+                        </div>
                         <br/>
                         <p>Assuming each infected person infects <span className="variable">{this.state.r0.toPrecision(2)}</span> other new people on average (called R0).</p>
                         <p>Use the slider to vary this value.</p>
-                    </div>
-        
-                    <div className="right-grid">
-                        <h3>Generations</h3>
-                        <br/>
-                    <InputRange
-                        name = "Generations (how many hops the virus needs to make)"
-                        formatLabel={value => `${value}`}
-                        maxValue={50}
-                        minValue={0}
-                        value={this.state.generations}
-                        onChange={value => this.setState({ generations: value })}
-                    />
-                    <br/>
-                    <p>Assuming the virus hops a chain of <span className="variable">{this.state.generations}</span> generations [ignore this if it tells you nothing]</p>
                     
-                    </div>
+        
+                    
 
-                </div>
+                
                 <p className="scaryNum big">{this.getInfected()}</p>
                 <h3> people will be infected <span className="scaryNum">from</span> that <span className="scaryNum">one first case</span> 😱</h3>
-                <p>Total cases (ignoring deaths and recovery)</p>
+                <p>Total cases (ignoring deaths and recovery). Assuming 20 generations</p>
                 <h2>The good news is that we can control this number. How?</h2>
-                <p className="scaryNum">Short answer: EVERYONE should compulsorily stay home. Even if they're fine (also remember that the symptoms may take a while to show up).</p>
+                <p className="scaryNum"><span className="ans">Short answer: EVERYONE should compulsorily stay home. Even if they're fine</span> <br/> (also remember that the symptoms may take a while to show).</p>
                 <p>If we can control the number of average new infections (R0), we can greatly reduce the number of new cases. If the average number of people infected by a infected person is between 2 and 3, we get 60 Million (6 crore) total cases in just 20 generations.</p><p>However, if we reduce the number of people a person infects to, say, 1.3, we get just 630 in 20 generations! Such a huge difference! Don't believe me? Enter 1.3 in the slider and see for yourself!</p>
                 <p>To stop the spread of the virus, we need to reduce R0 as much as possible (China has managed to reduce their R0 greatly so we know it is possible). We have limited hospital beds and ICU facilities, we can't afford to overwhelm our healthcare pipeline at a time like this. <a href="https://twitter.com/JasonYanowitz/status/1238977743653687296">See what happens when the number of cases go beyond what hospitals can handle</a> </p>
                 <p>🏠<span className="scaryNum">Our best shot at stopping COVID-19 is if each and every person (that includes you and your loved ones) stays home.</span>

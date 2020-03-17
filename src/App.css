@@ -7,6 +7,8 @@
 .block
 {
   font-weight: 400;
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
 }
 a:visited{
   color: #ff6767;
@@ -20,6 +22,11 @@ a {
   text-align: center;
 }
 
+.range
+{
+  margin: 0 auto;
+  max-width: 500px;
+}
 .centerText
 {
   margin: 0 auto;
@@ -110,6 +117,10 @@ input{
   color: black;
 }
 
+.ans
+{
+  font-size: 1.5em;
+}
 .left-grid
 {
   padding-right: 5%;
