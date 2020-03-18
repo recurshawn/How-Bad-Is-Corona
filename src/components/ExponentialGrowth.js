@@ -101,6 +101,7 @@ class ExponentialGrowth extends React.Component {
                 <br/>🛀Have a bath each time you return home from the outside and keep your dirty clothes seperated.</p></span>
                 <p>Share this with someone you care about:</p>
                 <a href="https://api.whatsapp.com/send?text=Is%20the%20Corona%20Virus%20(COVID-19)%20overhyped%20by%20the%20media%3F%20NOT%20AT%20ALL!%20So%20then%2C%20what%20is%20the%20big%20deal%3F%20%0A%0AInfections%20are%20spreading%20exponentially.%20Find%20out%20how%20dangerous%20that%20is%3A%20HowBadIsCorona.com%0A%0Ahttps%3A%2F%2Fhowbadiscorona.com%20lets%20you%20see%20how%20*just%20staying%20home%20will%20greatly%20reduce%20the%20problem%20for%20you%20and%20everyone.*"><button className="block button accent">Share on WhatsApp</button></a>
+                <a href="https://www.producthunt.com/posts/how-bad-is-the-corona-virus"><button className="block button accent">Support Product Hunt Launch</button></a>
             </div>
         )
     }
