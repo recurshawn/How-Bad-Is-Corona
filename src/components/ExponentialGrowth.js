@@ -91,7 +91,7 @@ class ExponentialGrowth extends React.Component {
                 <p className="scaryNum big">{this.getInfected()}</p>
                 <h3> people will be infected <span className="scaryNum">from</span> that <span className="scaryNum">one first case</span> 😱</h3>
                 <p>Total cases (ignoring deaths and recovery). Assuming 20 generations</p>
-                <h2>The good news is that we can control this number. How?</h2>
+                <h1>The <span className="scaryNum">good news</span> is that we can control this number. How?</h1>
                 <p className="scaryNum"><span className="ans">Short answer: EVERYONE should compulsorily stay home. Even if they're fine</span> <br/> (also remember that the symptoms may take a while to show).</p>
                 <span className="alignLeft">
                 <p>If we can control the number of average new infections (R0), we can greatly reduce the number of new cases. If the average number of people infected by a infected person is between 2 and 3, we get 60 Million (6 crore) total cases in just 20 generations.</p><p>However, if we reduce the number of people a person infects to, say, 1.3, we get just 630 in 20 generations! Such a huge difference! Don't believe me? Enter 1.3 in the slider and see for yourself!</p>
