@@ -6,7 +6,7 @@
 
 # [How Bad Is Corona](https://howbadiscorona.com/)
 
-Find out how dangerous the exponential growth of COVID-19 can be. https://howbadiscorona.com/
+A lot of people aren't aware of how bad exponential growth of pandemics are, so I built this simple web app to help visualise how small actions can drastically affect the outbreak. Find out how dangerous the exponential growth of COVID-19 can be. https://howbadiscorona.com/
 
 ## Contributing
 
