@@ -8,4 +8,22 @@
 
 Find out how dangerous the exponential growth of COVID-19 can be. https://howbadiscorona.com/
 
+## Contributing
 
+### Ways you can contribute: ###
+- [Contribute to the code](https://github.com/recurshawn/How-Bad-Is-Corona) Check the next section for technical details of the project.
+- [Monetary Donation](https://ko-fi.com/recurshawn)
+- Emotional Support: [Tell me you liked this!](https://twitter.com/Incept_shawn)
+
+### Technology Stack: ###
+- HTML
+- CSS, [blocks.css](https://github.com/thesephist/blocks.css)
+- JavaScript, [React.js](https://reactjs.org/)
+
+### Working on 'Own The 2020s' locally ###
+- Clone the repository locally. 
+- Navigate to the directory. `cd How-Bad-Is-Corona`.
+- Run `npm install` to install dependencies.
+- Run `npm run start` to start the development server.
+- Run `npm run test` to test.
+- Run `npm run build` to create a optimized production build.
