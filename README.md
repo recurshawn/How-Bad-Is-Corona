@@ -20,7 +20,7 @@ A lot of people aren't aware of how bad exponential growth of pandemics are, so 
 - CSS, [blocks.css](https://github.com/thesephist/blocks.css)
 - JavaScript, [React.js](https://reactjs.org/)
 
-### Working on 'Own The 2020s' locally ###
+### Working on 'How-Bad-Is-Corona' locally ###
 - Clone the repository locally. 
 - Navigate to the directory. `cd How-Bad-Is-Corona`.
 - Run `npm install` to install dependencies.
