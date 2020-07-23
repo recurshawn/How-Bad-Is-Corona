@@ -16,8 +16,8 @@ A lot of people aren't aware of how bad exponential growth of pandemics are, so 
 - Emotional Support: [Tell me you liked this!](https://twitter.com/Incept_shawn)
 
 ### Technology Stack: ###
-- HTML
-- CSS, [blocks.css](https://github.com/thesephist/blocks.css)
+- HTML5
+- CSS3, [blocks.css](https://github.com/thesephist/blocks.css)
 - JavaScript, [React.js](https://reactjs.org/)
 
 ### Working on 'How-Bad-Is-Corona' locally ###
