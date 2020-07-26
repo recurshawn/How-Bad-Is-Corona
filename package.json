@@ -9,7 +9,7 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-input-range": "^1.3.0",
-    "react-scripts": "3.4.0",
+    "react-scripts": "3.4.1",
     "react-youtube": "^7.9.0"
   },
   "scripts": {
