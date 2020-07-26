@@ -2,6 +2,8 @@ import React from 'react';
 import InputRange from 'react-input-range';
 import '../rangeinput.css';
 
+import Emoji from './Emoji';
+
 class ExponentialGrowth extends React.Component {
     state = {
         r0: 2.5,
@@ -89,16 +91,16 @@ class ExponentialGrowth extends React.Component {
 
                 
                 <p className="scaryNum big">{this.getInfected()}</p>
-                <h3> people will be infected <span className="scaryNum">from</span> that <span className="scaryNum">one first case</span> 😱</h3>
+                <h3> people will be infected <span className="scaryNum">from</span> that <span className="scaryNum">one first case</span> <Emoji symbol="😱" label="scared"/></h3>
                 <p>Total cases (ignoring deaths and recovery). Assuming 20 generations</p>
                 <h1>The <span className="scaryNum">good news</span> is that we can control this number. How?</h1>
                 <p className="scaryNum"><span className="ans">Short answer: EVERYONE should compulsorily stay home. Even if they're fine</span> <br/> (also remember that the symptoms may take a while to show).</p>
                 <span className="alignLeft">
                 <p>If we can control the number of average new infections (R0), we can greatly reduce the number of new cases. If the average number of people infected by a infected person is between 2 and 3, we get 60 Million (6 crore) total cases in just 20 generations.</p><p>However, if we reduce the number of people a person infects to, say, 1.3, we get just 630 in 20 generations! Such a huge difference! Don't believe me? Enter 1.3 in the slider and see for yourself!</p>
                 <p>To stop the spread of the virus, we need to reduce R0 as much as possible (China has managed to reduce their R0 greatly so we know it is possible). We have limited hospital beds and ICU facilities, we can't afford to overwhelm our healthcare pipeline at a time like this. <a href="https://twitter.com/JasonYanowitz/status/1238977743653687296">See what happens when the number of cases go beyond what hospitals can handle</a> </p>
-                <p>🏠<span className="scaryNum">Our best shot at stopping COVID-19 is if each and every person (that includes you and your loved ones) stays home.</span>
-                <br/>👐Washing your hands regularly and not touching your face will help a lot too. 
-                <br/>🛀Have a bath each time you return home from the outside and keep your dirty clothes seperated.</p></span>
+                <p><Emoji symbol="🏠" label="home"/><span className="scaryNum">Our best shot at stopping COVID-19 is if each and every person (that includes you and your loved ones) stays home.</span>
+                <br/><Emoji symbol="👐" label="hands"/>Washing your hands regularly and not touching your face will help a lot too. 
+                <br/><Emoji symbol="🛀" label="bath"/>Have a bath each time you return home from the outside and keep your dirty clothes seperated.</p></span>
                 <p>Share this with someone you care about:</p>
                 <a href="https://api.whatsapp.com/send?text=Is%20the%20Corona%20Virus%20(COVID-19)%20overhyped%20by%20the%20media%3F%20NOT%20AT%20ALL!%20So%20then%2C%20what%20is%20the%20big%20deal%3F%20%0A%0AInfections%20are%20spreading%20exponentially.%20Find%20out%20how%20dangerous%20that%20is%3A%20HowBadIsCorona.com%0A%0Ahttps%3A%2F%2Fhowbadiscorona.com%20lets%20you%20see%20how%20*just%20staying%20home%20will%20greatly%20reduce%20the%20problem%20for%20you%20and%20everyone.*"><button className="block button accent">Share on WhatsApp</button></a>
                 
