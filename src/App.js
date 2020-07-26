@@ -1,4 +1,4 @@
-import React, {Suspense, lazy} from 'react';
+import React from 'react';
 
 import './App.css';
 
@@ -7,7 +7,6 @@ import ExponentialGrowth from './components/ExponentialGrowth';
 import References from './components/References';
 import Emoji from './components/Emoji';
 
-const YouTubeEmbed = lazy(() => import('./components/YouTubeEmbed'));
 
 class App extends React.Component {
   render() {
